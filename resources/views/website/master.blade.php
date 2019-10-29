@@ -115,6 +115,9 @@
                                             <a href="{{route('panel')}}">Panel</a>
                                         </li>
                                     @endif
+                                    <li>
+                                        <a href="{{route('logout')}}">Logout</a>
+                                    </li>
                                 @endguest
                             </ul>
                         </div>
@@ -153,6 +156,9 @@
                                                 <a href="{{route('panel')}}">Panel</a>
                                             </li>
                                         @endif
+                                        <li>
+                                            <a href="{{route('logout')}}">Logout</a>
+                                        </li>
                                     @endguest
 
                                 </ul>

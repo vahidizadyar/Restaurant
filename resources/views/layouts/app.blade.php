@@ -57,6 +57,12 @@
                             <p>{{ __('Users') }}</p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('logout') }}">
+                            <i class="material-icons">power_settings_new</i>
+                            <p>{{ __('Logout') }}</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

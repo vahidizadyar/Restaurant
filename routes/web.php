@@ -3,6 +3,7 @@ Route::get('/', 'MainController@index')->name('main');
 Route::get('/food/{slug}', 'FoodController@show')->name('foodDetail');
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
+    Route::get('logout','UserController@manual_logout');
     Route::middleware(['checkAdmin'])->group(function () {
         Route::prefix('panel')->group(function () {
             // views

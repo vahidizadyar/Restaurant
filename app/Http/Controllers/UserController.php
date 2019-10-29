@@ -99,7 +99,7 @@ class UserController extends Controller
         return back()->withStatus('User successfully unbanned');
     }
 
-    public function test()
+    public function manual_logout()
     {
         auth()->logout();
         return redirect()->route('main');
