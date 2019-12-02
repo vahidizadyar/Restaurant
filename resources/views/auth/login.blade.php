@@ -48,6 +48,11 @@
                                     <small>{{ __('Create new account') }}</small>
                                 </a>
                             </div>
+                            <div class="col-6 text-center">
+                                <a href="{{ route('password.request') }}" class="text-light">
+                                    <small>{{ __('Forgot Password ?') }}</small>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

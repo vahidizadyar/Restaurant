@@ -3,20 +3,35 @@
 namespace App\Http\Controllers;
 
 use App\About;
+use App\Category;
 use App\Food;
-use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
     public function index()
     {
         $about = About::all()->first();
-        $foods = Food::with(['photos'])->get();
-        return view('website.main',compact('about','foods'));
+        $foods = Category::with(['foods' => function ($query) {
+            $query->with(['photos'])->orderByDesc('id')->limit(6);
+        }])->get();
+        return view('website.main', compact('about', 'foods'));
+    }
+
+    public function about()
+    {
+        return view('website.about');
     }
 
     public function panel()
     {
         return view('cms.index');
+    }
+
+    public function category($category)
+    {
+        $category = Category::with(['foods' => function($query){
+            $query->orderByDesc('id');
+        }])->whereId($category)->get()->first();
+        return view('website.category',compact('category'));
     }
 }

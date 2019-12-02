@@ -1,8 +1,10 @@
 <?php
 Route::get('/', 'MainController@index')->name('main');
+Route::get('/about-us', 'MainController@about')->name('about');
+Route::get('/category/{category}', 'MainController@category')->name('category');
 Route::get('/food/{slug}', 'FoodController@show')->name('foodDetail');
-Auth::routes();
-Route::middleware(['auth'])->group(function () {
+Auth::routes(['verify' => true]);
+Route::middleware(['auth','verified'])->group(function () {
     Route::get('logout','UserController@manual_logout');
     Route::middleware(['checkAdmin'])->group(function () {
         Route::prefix('panel')->group(function () {
@@ -27,7 +29,13 @@ Route::middleware(['auth'])->group(function () {
             Route::post('gallery/{gallery}/delete', 'GalleryController@destroy')->name('gallery.delete');
             Route::post('gallery/store', 'GalleryController@store')->name('gallery.store');
             Route::get('user/{user}/edit', 'UserController@edit')->name('user.edit');
+//            Route::get('profile/edit', 'UserController@edit')->name('user.edit.self');
             Route::post('user/{user}/ban', 'UserController@ban')->name('user.ban');
+//            Route::post('profile/update', 'UserController@update')->name('profile.update');
+
+            Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
+            Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+            Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
         });
     });
     Route::post('/food/{food}/comment/store', 'ActivityController@storeComment')->name('addComment');

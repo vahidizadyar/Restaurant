@@ -53,7 +53,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        return view('cms.users.edit', compact('user'));
+        return view('profile.edit', compact('user'));
     }
 
     /**

@@ -5,9 +5,15 @@
         <div id="rev_slider_1075_1" class="rev_slider fullscreen" style="display:none;" data-version="5.4.1">
             <ul>
                 <!-- SLIDE  -->
-                <li data-index="rs-3034" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1500"  data-thumb="../../assets/images/fashion_bg1-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <li data-index="rs-3034" data-transition="fade" data-slotamount="7" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1500"
+                    data-thumb="../../assets/images/fashion_bg1-100x50.jpg" data-rotate="0" data-fstransition="fade"
+                    data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Intro"
+                    data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="images/slide_01.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina>
+                    <img src="images/slide_01.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                         data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina>
 
                     <!-- LAYERS 1-->
                     <div class="tp-caption   tp-resizeme"
@@ -27,7 +33,9 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 6;"><img src="images/slide_logo.png" alt="" data-ww="537px" data-hh="537px" width="537" height="537" data-no-retina> </div>
+                         style="z-index: 6;"><img src="{{asset('images/slide_logo.png')}}" alt="" data-ww="537px"
+                                                  data-hh="537px"
+                                                  width="537" height="537" data-no-retina></div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
@@ -46,7 +54,7 @@
                          data-paddingright="[0,0,0,0]"
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
-                         style="z-index: 8;background-color:rgba(255, 255, 255, 0.5);"> </div>
+                         style="z-index: 8;background-color:rgba(255, 255, 255, 0.5);"></div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption   tp-resizeme"
@@ -66,14 +74,22 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 7; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 6px;font-family:Poppins;text-transform:uppercase;">Apple pie a la creme </div>
+                         style="z-index: 7; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 6px;font-family:Poppins;text-transform:uppercase;">
+                        Apple pie a la creme
+                    </div>
                 </li>
                 <!-- SLIDE  -->
 
-                <li data-index="rs-3035" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1500"  data-thumb="../../assets/images/fashion_bg1-100x50.jpg"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <li data-index="rs-3035" data-transition="fade" data-slotamount="7" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1500"
+                    data-thumb="../../assets/images/fashion_bg1-100x50.jpg" data-rotate="0" data-fstransition="fade"
+                    data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Intro"
+                    data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 
                     <!-- MAIN IMAGE -->
-                    <img src="images/slide_02.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina>
+                    <img src="images/slide_02.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                         data-bgrepeat="no-repeat" data-bgparallax="6" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS 1 -->
                     <div class="tp-caption tp-resizeme"
                          id="slide-5-layer-2"
@@ -92,7 +108,9 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 6;"><img src="images/slide_logo.png" alt="" data-ww="537px" data-hh="537px" width="537" height="537" data-no-retina> </div>
+                         style="z-index: 6;"><img src="{{asset('images/slide_logo.png')}}" alt="" data-ww="537px"
+                                                  data-hh="537px"
+                                                  width="537" height="537" data-no-retina></div>
 
                     <!-- LAYERS NR. 2 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
@@ -112,7 +130,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 8;background-color:rgba(255, 255, 255, 0.5);"> </div>
+                         style="z-index: 8;background-color:rgba(255, 255, 255, 0.5);"></div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption   tp-resizeme"
@@ -132,7 +150,9 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 7; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 6px;font-family:Poppins;text-transform:uppercase;">Apple pie a la creme </div>
+                         style="z-index: 7; white-space: nowrap; font-size: 12px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 6px;font-family:Poppins;text-transform:uppercase;">
+                        Apple pie a la creme
+                    </div>
                 </li>
                 <!-- SLIDE  -->
             </ul>
@@ -150,12 +170,13 @@
                         <div class="min-height-550">
                             <div class="multilayers-item margin-top-80 position-relative">
                                 <div class="image-item">
-                                    <img class="img-responsive" src="images/restaurant-img-1.jpg" alt="">
+                                    <img class="img-responsive" style="width: 65%"
+                                         src="{{asset('images/restaurant-2.jpeg')}}" alt="">
                                 </div>
                             </div>
                             <div class="multilayers-item padding-left-250">
                                 <div class="image-item">
-                                    <img class="img-responsive" src="images/restaurant-img-2.jpg" alt="">
+                                    <img class="img-responsive" src="{{asset('images/restaurant-1.jpeg')}}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -165,11 +186,11 @@
                     <div class="welcome-right padding-left-125">
                         <div class="section-title">
                             <h2>Welcome at</h2>
-                            <h3>Darbar’s restaurant</h3>
+                            <h3>Darbar restaurant</h3>
                         </div>
                         <h6 class="small-headline">“{{$about->title}}”.</h6>
-                        <p>{{$about->content}}</p>
-                        <a href="#dannys" class="btn btn-primary scroll">about us</a>
+                        <p>{!! $about->content !!}</p>
+                        <a href="{{route('about')}}" class="btn btn-primary scroll">about us</a>
                     </div>
                 </div>
             </div>
@@ -189,10 +210,15 @@
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 col-md-6">
-                                    <p class="gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                                    <p class="gray">Darbar provides something for everybody, from delectable dining with
+                                        a Mediterranean flavour. This led to the creation of a menu focused on dishes
+                                        based on honest ingredients, injected with passion and goodness. </p>
                                 </div>
                                 <div class="col-sm-6 col-md-6">
-                                    <p class="gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                                    <p class="gray">More evolution, or perhaps I mean revolution, as our menu has become
+                                        even more adventurous, with Iranian traditional dishes becoming fabulous. We are
+                                        perfectionists in everything we do, believe that food deserves respect, and so
+                                        our ingredients are fresh and ethically sourced.</p>
                                 </div>
                             </div>
                             <a href="#" class="btn btn-secondary">what’s on the menu</a>
@@ -206,45 +232,45 @@
     <!-- Restaurant - Menu Section End -->
 
     <!-- Specialties Section Start -->
-{{--    <div class="specialties-section section-bg-white padding-top-120 padding-bottom-220 section-block">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-sm-12 col-md-6">--}}
-{{--                    <div class="element-block">--}}
-{{--                        <div class="min-height-550">--}}
-{{--                            <div class="multilayers-item margin-minus-left-120 position-relative">--}}
-{{--                                <div class="image-item">--}}
-{{--                                    <img class="img-responsive" src="images/specialties-img1.jpg" alt="">--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="multilayers-item padding-top-275 padding-left-80 z-index">--}}
-{{--                                <div class="image-item">--}}
-{{--                                    <img class="img-responsive" src="images/specialties-img2.jpg" alt="">--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--                <div class="col-sm-12 col-md-6">--}}
-{{--                    <div class="specialties-right padding-left-125 padding-top-65">--}}
-{{--                        <div class="section-title">--}}
-{{--                            <h2>Chinese</h2>--}}
-{{--                            <h3>specialties</h3>--}}
-{{--                        </div>--}}
-{{--                        <div class="row">--}}
-{{--                            <div class="col-sm-6 col-md-6">--}}
-{{--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-sm-6 col-md-6">--}}
-{{--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <a href="menu–stretched.html" class="btn btn-primary">view all</a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    {{--    <div class="specialties-section section-bg-white padding-top-120 padding-bottom-220 section-block">--}}
+    {{--        <div class="container">--}}
+    {{--            <div class="row">--}}
+    {{--                <div class="col-sm-12 col-md-6">--}}
+    {{--                    <div class="element-block">--}}
+    {{--                        <div class="min-height-550">--}}
+    {{--                            <div class="multilayers-item margin-minus-left-120 position-relative">--}}
+    {{--                                <div class="image-item">--}}
+    {{--                                    <img class="img-responsive" src="images/specialties-img1.jpg" alt="">--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="multilayers-item padding-top-275 padding-left-80 z-index">--}}
+    {{--                                <div class="image-item">--}}
+    {{--                                    <img class="img-responsive" src="images/specialties-img2.jpg" alt="">--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                        </div>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--                <div class="col-sm-12 col-md-6">--}}
+    {{--                    <div class="specialties-right padding-left-125 padding-top-65">--}}
+    {{--                        <div class="section-title">--}}
+    {{--                            <h2>Chinese</h2>--}}
+    {{--                            <h3>specialties</h3>--}}
+    {{--                        </div>--}}
+    {{--                        <div class="row">--}}
+    {{--                            <div class="col-sm-6 col-md-6">--}}
+    {{--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="col-sm-6 col-md-6">--}}
+    {{--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>--}}
+    {{--                            </div>--}}
+    {{--                        </div>--}}
+    {{--                        <a href="menu–stretched.html" class="btn btn-primary">view all</a>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
+    {{--    </div>--}}
     <!-- Specialties Section End -->
 
     <!-- Todays Specialties Start -->
@@ -274,39 +300,46 @@
                             <h2>menu</h2>
                         </div>
                         <ul>
-                            <li class="active"><a href="#menulist" class="scroll">all</a></li>
-{{--                            <li><a href="#menulist" class="scroll">starters</a></li>--}}
-{{--                            <li><a href="#menulist" class="scroll">main</a></li>--}}
-{{--                            <li><a href="#menulist" class="scroll">DESSERT</a></li>--}}
-{{--                            <li><a href="#menulist" class="scroll">drinks</a></li>--}}
-{{--                            <li><a href="#menulist" class="scroll">daily menu</a></li>--}}
-{{--                            <li><a href="#menulist" class="scroll">chef’s specialty</a></li>--}}
-{{--                            <li><a href="#menulist" class="scroll">offers</a></li>--}}
+                            @for($x=0;$x<count($foods);$x++)
+                                <li id="#{{$foods[$x]->title.'-'.$foods[$x]->id.'-button'}}"
+                                    class="category-button {{ ($x !=0) ? '' : 'active' }}"><a
+                                        onclick="showCat('#{{$foods[$x]->title.'-'.$foods[$x]->id}}')"
+                                        href="javascript:void(0)" class="scroll">{{$foods[$x]->title}}</a></li>
+                            @endfor
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-9">
-                    <div class="menu-list-right">
-                        <ul class="products-list">
-                            @foreach($foods as $food)
-                                <li class="products-block">
-                                    <a href="{{route('foodDetail',[$food->slug])}}" class="product-link">
-                                        <img class="img-responsive" style="width: 337px;height: 337px;" src="{{(isset($food->photos[0]->url)) ? asset(('images/foods/'.$food->photos[0]->url)) :''}}" alt="">
-                                        <div class="info-wrapper">
-                                            <h2 class="product-title">{{$food->title}}</h2>
-                                            <span class="price">£{{$food->price}}</span>
+                    <div class="menu-list-right" id="menu-list-right-foods">
+                        @for($i=0;$i<count($foods);$i++)
+                            <ul class="products-list foods-thumb" id="{{$foods[$i]->title.'-'.$foods[$i]->id}}"
+                                style="{{ ($i != 0) ? 'display : none' : '' }}">
+                                @foreach($foods[$i]->foods as $food)
+                                    <li class="products-block">
+                                        <a href="{{route('foodDetail',[$food->slug])}}" class="product-link">
+                                            <img class="img-responsive" style="height: 337px;"
+                                                 src="{{(isset($food->photos[0]->url)) ? asset(('images/foods/'.$food->photos[0]->url)) :''}}"
+                                                 alt="">
+                                            <div class="info-wrapper">
+                                                <h2 class="product-title">{{$food->title}}</h2>
+                                                <span class="price">£{{$food->price}}</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                @endforeach
+                                <li class="products-block fancy-pag" style="height: 337px;">
+                                    <div class="fancy-inner-block">
+                                        <div class="pag-arrows">
+                                            <a href="{{route('category',[$foods[$i]->id])}}">next <span
+                                                    class="arrow-right"><i class="fa fa-angle-right"
+                                                                           aria-hidden="true"></i></span><span
+                                                    class="arrow-left"><i class="fa fa-angle-left"
+                                                                          aria-hidden="true"></i></span></a>
                                         </div>
-                                    </a>
-                                </li>
-                            @endforeach
-                            <li class="products-block fancy-pag">
-                                <div class="fancy-inner-block">
-                                    <div class="pag-arrows">
-                                        <a href="#">next <span class="arrow-right"><i class="fa fa-angle-right" aria-hidden="true"></i></span><span class="arrow-left"><i class="fa fa-angle-left" aria-hidden="true"></i></span></a>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        @endfor
                     </div>
                 </div>
             </div>
