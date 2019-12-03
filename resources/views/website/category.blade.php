@@ -1,4 +1,4 @@
-@extends('website.masterDetail',[ 'pageTitle' => 'Darbar Rrestaurant | '.$category->title.' Foods ' ])
+@extends('website.masterDetail',[ 'pageTitle' => 'Darbar Restaurant | '.$category->title.' Foods ' ])
 @section('content')
     <div class="content menu-list menu-list-container">
         <div class="container">

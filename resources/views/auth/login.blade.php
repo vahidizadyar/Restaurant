@@ -1,4 +1,4 @@
-@extends('website.masterDetail')
+@extends('website.masterDetail',['pageTitle' => 'Darbar Restaurant | Login'])
 
 @section('content')
     <div class="content">

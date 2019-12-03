@@ -221,7 +221,7 @@
                                         our ingredients are fresh and ethically sourced.</p>
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-secondary">what’s on the menu</a>
+                            <a onclick="scroll2menu()" class="btn btn-secondary">what’s on the menu</a>
                         </div>
                     </div>
                 </div>
@@ -346,4 +346,9 @@
         </div>
     </div>
     <!-- Menu List End -->
+    <script>
+        function scroll2menu() {
+            $('html, body').animate({scrollTop: $("#menulist").offset().top - 100}, 1000);
+        }
+    </script>
 @stop

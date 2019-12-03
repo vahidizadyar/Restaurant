@@ -1,4 +1,4 @@
-@extends('website.masterDetail')
+@extends('website.masterDetail',['pageTitle' => 'Darbar Restaurant | Register'])
 @section('content')
     <div class="content">
         <div class="container">
@@ -54,6 +54,9 @@
                             <div class="card-footer justify-content-center">
                                 <button type="submit"
                                         class="btn btn-primary btn-link btn-lg">{{ __('Register') }}</button>
+                                <span>
+                                    {{ __('(A fresh verification link will be sent to your email address after registration.)') }}
+                                </span>
                             </div>
                         </form>
                     </div>

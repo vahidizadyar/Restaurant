@@ -1,11 +1,16 @@
 <?php
-Route::get('/', 'MainController@index')->name('main');
+Route::get("/",function (){
+    return view("coming_soon");
+});
+Route::get('/homePage', 'MainController@index')->name('main');
 Route::get('/about-us', 'MainController@about')->name('about');
 Route::get('/category/{category}', 'MainController@category')->name('category');
 Route::get('/food/{slug}', 'FoodController@show')->name('foodDetail');
 Auth::routes(['verify' => true]);
-Route::middleware(['auth','verified'])->group(function () {
+Route::middleware(['auth'])->group(function (){
     Route::get('logout','UserController@manual_logout');
+});
+Route::middleware(['auth','verified'])->group(function () {
     Route::middleware(['checkAdmin'])->group(function () {
         Route::prefix('panel')->group(function () {
             // views
