@@ -3,8 +3,12 @@ Route::get("/",function (){
     return view("coming_soon");
 });
 Route::get('/homePage', 'MainController@index')->name('main');
+Route::get('/gallery', 'GalleryController@index')->name('gallery');
+Route::get('/main2', 'MainController@index2')->name('main2');
 Route::get('/about-us', 'MainController@about')->name('about');
+Route::get('/catering', 'MainController@catering')->name('catering');
 Route::get('/category/{category}', 'MainController@category')->name('category');
+Route::get('/menu', 'CategoryController@index')->name('category.index');
 Route::get('/food/{slug}', 'FoodController@show')->name('foodDetail');
 Auth::routes(['verify' => true]);
 Route::middleware(['auth'])->group(function (){

@@ -14,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return response(Category::with(['foods'])->get());
+        $menu = Category::with(['foods'])->get();
+        return view('website.menu',compact('menu'));
     }
 
     /**
@@ -39,6 +40,9 @@ class CategoryController extends Controller
             'title'=>'required'
         ]);
         $category = new Category($request->all());
+        $imageName = time() . '.' . $request->file('photo')->getClientOriginalExtension();
+        $request->file('photo')->move(public_path('/images'), $imageName);
+        $category->photo = $imageName;
         $category->save();
         return back()->withStatus('Category successfully created.');
     }
@@ -76,6 +80,11 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         $category->title = $request->get('title');
+        if ($request->has('photo')){
+            $imageName = time() . '.' . $request->file('photo')->getClientOriginalExtension();
+            $request->file('photo')->move(public_path('/images'), $imageName);
+            $category->photo = $imageName;
+        }
         $category->save();
         return redirect()->route('category.index')->withStatus('Category successfully updated.');
     }

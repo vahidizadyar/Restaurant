@@ -18,6 +18,7 @@ class CreateFoodsTable extends Migration
             $table->string('title')->nullable();
             $table->string('slug')->unique();
             $table->text('content')->nullable();
+            $table->string('description',80)->nullable();
             $table->double('price')->default(0);
             $table->unsignedBigInteger('type_id')->index();
             $table->timestamps();

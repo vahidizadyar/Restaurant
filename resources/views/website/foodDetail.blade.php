@@ -18,16 +18,41 @@
                 <div class="col-sm-6 col-md-6">
                     <div class="single-shop-left">
                         <div class="single-shop-item">
-                            @foreach($food->photos as $photo)
-                                <div><img src="{{asset('images/foods/'.$photo->url)}}" alt="{{$food->title}}"></div>
-                            @endforeach
-
+                            <div id="bx-wrapper" class="bx-wrapper">
+                                {{--                                <div class="bx-loading">--}}
+                                {{--                                    <span>Loading...</span>--}}
+                                {{--                                </div>--}}
+                                {{--                                <div class="bx-content">--}}
+                                {{--                                    <h2>Aroma Paradise</h2>--}}
+                                {{--                                </div>--}}
+                                <div class="bx-thumbs">
+                                    @for($i=0;$i<count($food->photos);$i++)
+                                        @if($i!=0)
+                                            <a href="#"
+                                               style="background-image:url({{asset('images/foods/'.$food->photos[$i]->url)}})"></a>
+                                        @else
+                                            <a href="#" class="bx-thumbs-current"
+                                               style="background-image:url({{asset('images/foods/'.$food->photos[$i]->url)}})"></a>
+                                        @endif
+                                    @endfor
+                                </div>
+                                <div class="bx-container">
+                                    @foreach($food->photos as $photo)
+                                        <img src="{{asset('images/foods/'.$photo->url)}}" alt="{{$food->title}}"
+                                             title="{{$food->title}}"/>
+                                    @endforeach
+                                </div>
+                                <div class="bx-overlay"></div>
+                            </div>
+                            {{--                            @foreach($food->photos as $photo)--}}
+                            {{--                                <div><img src="{{asset('images/foods/'.$photo->url)}}" alt="{{$food->title}}"></div>--}}
+                            {{--                            @endforeach--}}
                         </div>
-                        <div class="single-shop-item-nav">
-                            @foreach($food->photos as $photo)
-                                <div><img src="{{asset('images/foods/'.$photo->url)}}" alt="{{$food->title}}"></div>
-                            @endforeach
-                        </div>
+                        {{--                        <div class="single-shop-item-nav">--}}
+                        {{--                            @foreach($food->photos as $photo)--}}
+                        {{--                                <div><img src="{{asset('images/foods/'.$photo->url)}}" alt="{{$food->title}}"></div>--}}
+                        {{--                            @endforeach--}}
+                        {{--                        </div>--}}
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6">
@@ -158,7 +183,8 @@
             @endauth
         });
         @guest()
-            $('#food-rating').starRating('setReadOnly', true);
+        $('#food-rating').starRating('setReadOnly', true);
+
         @endguest
         function sendRate(food_id, rate) {
             $.post('/rate/store',

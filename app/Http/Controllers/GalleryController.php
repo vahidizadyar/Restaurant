@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Food;
 use App\Gallery;
+use App\Photo;
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller
@@ -14,7 +16,8 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        //
+        $photos = Photo::all(['url',"food_id",'deleted_at'])->where('deleted_at','is null',null);
+        return view('website.gallery',compact('photos'));
     }
 
     public function indexCms()

@@ -11,13 +11,16 @@
                     @include('cms.message')
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-right">
-                            <form action="{{route('category.store')}}" method="post">
+                            <form action="{{route('category.store')}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-4">
                                         <input class="form-control ml-2 mt-2" type="text" name="title" placeholder="Enter Category" required>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-4">
+                                        <input class="form-control ml-2 mt-2" type="file" name="photo" placeholder="Upload Picture for Category" required>
+                                    </div>
+                                    <div class="col-4">
                                         <button class="btn btn-sm btn-primary" type="submit">Add + </button>
                                     </div>
                                 </div>

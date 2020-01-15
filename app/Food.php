@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Food extends Model
 {
     use SoftDeletes;
-    protected $fillable = ['title', 'price', 'content', 'slug'];
+    protected $fillable = ['title', 'price', 'content', 'slug','description'];
     protected $appends = ['rank', 'likes', 'seen'];
 
     public function menus()
@@ -55,5 +55,17 @@ class Food extends Model
     public function getSeenAttribute()
     {
         return $this->activities()->where('type', 1)->count(['id']);
+    }
+
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        self::deleting(function ($food){
+            $food->photos()->delete();
+        });
+
+
     }
 }

@@ -1,0 +1,27 @@
+
+    /*jssor slider loading skin oval css*/
+.jssorl-003-oval img {
+    animation-name: jssorl-003-oval;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-003-oval {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider arrow skin 091 css*/
+.jssora091 {display:block;position:absolute;cursor:pointer;}
+.jssora091 .c {fill:#fff;fill-opacity:0.7;}
+.jssora091 .a {fill:#333;}
+.jssora091:hover {opacity:.8;}
+.jssora091.jssora091dn {opacity:.5;}
+.jssora091.jssora091ds {opacity:.3;pointer-events:none;}
+
+/*jssor slider thumbnail skin 051 css*/
+.jssort051 .p {position:absolute;top:0;left:0;background-color:#000;}
+.jssort051 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.45;}
+.jssort051 .p:hover .t{opacity:.8;}
+.jssort051 .pav .t, .jssort051 .pdn .t, .jssort051 .p:hover.pdn .t{opacity:1;}

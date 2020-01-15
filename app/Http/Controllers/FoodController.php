@@ -44,12 +44,13 @@ class FoodController extends Controller
             $food = new Food($request->all());
             $slug = str_replace(' ', '-', $request->title);
             $number = 1;
-            while (Food::whereSlug($slug)->exists()) {
+            while (Food::withTrashed()->whereSlug($slug)->exists()) {
                 $slug .= '-' . $number;
             }
             $food->slug = $slug;
             $food->save();
             $food->category()->attach($request->category);
+
             for ($i = 0; $i < count($request->file('files')); $i++) {
                 $imageName = time(). $i . '.' . $request->file('files')[$i]->getClientOriginalExtension();
                 $request->file('files')[$i]->move(public_path('/images/foods'), $imageName);

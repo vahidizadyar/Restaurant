@@ -12,7 +12,7 @@ class MainController extends Controller
     {
         $about = About::all()->first();
         $foods = Category::with(['foods' => function ($query) {
-            $query->with(['photos'])->orderByDesc('id')->limit(6);
+            $query->with(['photos'])->latest();
         }])->get();
         return view('website.main', compact('about', 'foods'));
     }
@@ -27,11 +27,16 @@ class MainController extends Controller
         return view('cms.index');
     }
 
+    public function catering()
+    {
+        return view('website.catering');
+    }
+
     public function category($category)
     {
-        $category = Category::with(['foods' => function($query){
+        $category = Category::with(['foods' => function ($query) {
             $query->orderByDesc('id');
         }])->whereId($category)->get()->first();
-        return view('website.category',compact('category'));
+        return view('website.category', compact('category'));
     }
 }

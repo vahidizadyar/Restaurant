@@ -2,7 +2,7 @@
 @section('content')
             <div class="row d-f lex justify-content-center">
                 <div class="col-md-6">
-                    <form method="post" action="{{route('category.update',[$category->id])}}" autocomplete="off" class="form-horizontal">
+                    <form method="post" action="{{route('category.update',[$category->id])}}" enctype="multipart/form-data" autocomplete="off" class="form-horizontal">
                         @csrf
                         <div class="card ">
                             <div class="card-header card-header-primary">
@@ -16,14 +16,24 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <label class="col-sm-2 col-form-label text-primary mt-2">{{ __('Name') }}</label>
-                                    <div class="col-sm-7">
+                                    <label class="col-sm-4 col-form-label text-primary mt-2">{{ __('Name') }}</label>
+                                    <div class="col-sm-4">
                                         <div class="form-group{{ $errors->has('title') ? ' has-danger' : '' }}">
                                             <input class="form-control{{ $errors->has('title') ? ' is-invalid' : '' }}" name="title" id="input-name" type="text" placeholder="{{ __('Name') }}" value="{{ old('name', $category->title) }}" required="true" aria-required="true"/>
                                             @if ($errors->has('title'))
-                                                <span id="name-error" class="error text-danger" for="input-name">{{ $errors->first('name') }}</span>
+                                                <span id="name-error" class="error text-danger" for="input-name">{{ $errors->first('title') }}</span>
                                             @endif
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-4 col-form-label text-primary mt-2">{{ __('Photo :') }}<br>
+                                        (upload for change)
+                                    </label>
+                                    <div class="col-sm-4">
+{{--                                        <div class="form-group{{ $errors->has('photo') ? ' has-danger' : '' }}">--}}
+                                            <input class="form-control" type="file" name="photo">
+{{--                                        </div>--}}
                                     </div>
                                 </div>
                             </div>

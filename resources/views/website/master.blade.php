@@ -46,6 +46,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('js/date-time-pick/classic.date.css')}}">
     <!-- Date-Picker-End -->
 
+
     <!--=== Windows Phone JS Code Start ===-->
     <script type="text/javascript">
         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
@@ -88,6 +89,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    @yield('header')
+
 </head>
 
 <body>
@@ -107,8 +111,8 @@
                     <div class="header-logo">
                         <a class="logo-anch" href="/">
                             <p class="center-y"
-                               style="color: #fff;font-family: 'Poppins', sans-serif !important;font-size: 17px;line-height: 11px;">
-                                DARBAR RESTAURANT</p>
+                               style="font-family: 'Poppins', sans-serif;font-size: 11px;line-height: 11px;color:#fff;text-transform: uppercase;font-weight: 600;letter-spacing: 2px;
+">DARBAR RESTAURANT</p>
                         </a>
                     </div>
                 </div>
@@ -130,6 +134,19 @@
                                 <li>
                                     <a href="{{route('main')}}">Home</a>
                                 </li>
+                                <li>
+                                    <a href="/menu" >menu</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('catering')}}">Catering</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('gallery')}}">Gallery</a>
+                                </li>
+
+                                <li>
+                                    <a href="{{route('about')}}">About Us</a>
+                                </li>
                                 @guest()
                                     <li>
                                         <a href="{{route('login')}}">Login</a>
@@ -147,9 +164,6 @@
                                         <a href="{{route('logout')}}">Logout</a>
                                     </li>
                                 @endguest
-                                <li>
-                                    <a href="{{route('about')}}">About Us</a>
-                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -176,7 +190,19 @@
                                     <li>
                                         <a href="{{route('main')}}">Home</a>
                                     </li>
+                                    <li>
+                                        <a href="/menu" >menu</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('catering')}}">Catering</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('gallery')}}">Gallery</a>
+                                    </li>
 
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
                                     @guest()
                                         <li>
                                             <a href="{{route('login')}}">Login</a>
@@ -194,10 +220,6 @@
                                             <a href="{{route('logout')}}">Logout</a>
                                         </li>
                                     @endguest
-                                    <li>
-                                        <a href="#">About Us</a>
-                                    </li>
-
                                 </ul>
                             </div>
                         </div>
@@ -466,13 +488,14 @@ color:
 #fff;
 text-transform: uppercase;
 font-weight: 600;
-letter-spacing: 2px;text-align: center">CONNECT</p>
+text-align: center">CONNECT</p>
 
-                    <p style="text-align: left"><a href="mailto: admin@darbarrestaurant.co.uk">Email:
-                            admin@darbarrestaurant.co.uk</a></p>
-                    <p style="text-align: left">Address: 135 Cheetham Hill Rd,Manchester M8 8LY</p>
-
-                    <a href="tel:0161 832 5383" style="text-align: left">Tel: 0161 832 5383</a>
+                    <p style="margin-top: 15px;margin-bottom: 20px;"><a style="text-align:left!important;font-size: 13px" href="mailto: admin@darbarrestaurant.co.uk">Email: admin@darbarrestaurant.co.uk</a></p>
+                    <p >Address: 135 Cheetham Hill Rd, Manchester<br>M8 8LY</p>
+                    <p><a href="tel:0161 832 5383" style="text-align: left!important;">Tel: 0161 832 5383</a></p>
+                    <p style="margin-top: 15px">Opening hours:<br>
+                        Monday to Friday: 1PM - 11PM<br>
+                        Saturday & Sunday: 12PM - 10PM</p>
 
                 </div>
 
@@ -495,9 +518,9 @@ letter-spacing: 2px;text-align: center">CONNECT</p>
                         <div class="f-follower">
                             <h6>follow</h6>
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://en-gb.facebook.com/darbar.persian.restaurant"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.tripadvisor.co.uk/Restaurant_Review-g187069-d14080697-Reviews-Darbar_Restaurant-Manchester_Greater_Manchester_England.html"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/darbar.persian.restaurant/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
